@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{85461f75-1047-4bd9-9d7b-f705818b5970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{33beeb35-9fe0-4ca0-92dd-344d3fd4cd42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{0edd246c-3535-45c9-bda8-df319bd84a0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PathTracer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyDome.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="PathTracer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\include\pugixml\src\pugixml.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyDome.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\terrain_fragment.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\terrain_vertex.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\path_fragment.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\path_vertex.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\tracer_vertex.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\tracer_fragment.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\skydome_vertex.glsl">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\skydome_fragment.glsl">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
