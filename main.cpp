@@ -93,7 +93,7 @@ int main()
 
     // Set camera position to the starting point of the hiking path
     glm::vec3 pathStartPosition = path.GetStartingPosition();
-    float cameraHeightOffset = 2.0f; // Adjust as needed
+    float cameraHeightOffset = 2.0f; 
     camera.Position = glm::vec3(
         pathStartPosition.x,
         pathStartPosition.y + cameraHeightOffset,
@@ -154,7 +154,7 @@ int main()
         }
 
         // Clear buffers
-        glClearColor(0.5f, 0.7f, 0.9f, 1.0f); // Sky color
+        glClearColor(0.1f, 0.7f, 0.9f, 1.0f); // water color
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // View and projection matrices

@@ -21,7 +21,7 @@ void SkyDome::generateSphereMesh(unsigned int latitudeBands, unsigned int longit
 
     float radius = 250.0f;
 
-    for (unsigned int latNumber = 0; latNumber <= latitudeBands; ++latNumber) {
+    for (unsigned int latNumber = 0; latNumber <= latitudeBands/2; ++latNumber) {
         float theta = latNumber * glm::pi<float>() / latitudeBands;
         float sinTheta = sin(theta);
         float cosTheta = cos(theta);
@@ -37,6 +37,8 @@ void SkyDome::generateSphereMesh(unsigned int latitudeBands, unsigned int longit
 
             float u = 1.0f - ((float)longNumber / longitudeBands);
             float v = 1.0f - ((float)latNumber / latitudeBands);
+            //float v = 2.0f * (1.0f - ((float)latNumber / (latitudeBands / 2)));
+
 
             vertices.push_back(radius * x);
             vertices.push_back(radius * y);
