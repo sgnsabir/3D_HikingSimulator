@@ -18,9 +18,9 @@ void main()
     FragPos = vec3(model * vec4(aPos, 1.0)); // Calculate world position of the vertex
     Normal = mat3(transpose(inverse(model))) * aNormal; // Transform normal to world space
     TexCoords = aTexCoords;
-
-    // Pass the height (y-coordinate) to the fragment shader for texturing
-    Height = FragPos.y;
+    // Match with height scaling in terrain generation
+    float terrainScale = 20.0;
+    Height = FragPos.y / terrainScale;
 
     gl_Position = projection * view * vec4(FragPos, 1.0); // Transform vertex to clip space
 }

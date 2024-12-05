@@ -128,13 +128,12 @@ bool Terrain::loadTexture(const std::string& texturePath) {
 void Terrain::setupMesh() {
     vertices.clear();
     indices.clear();
-    float uvScale = -2.0f;
+    float uvScale = 20.0f;
     // Generate vertices with positions, UVs, and placeholder normals
     for (int z = 0; z < height; ++z) {
         for (int x = 0; x < width; ++x) {
             float y = getHeight(x, z);
             glm::vec3 position = glm::vec3(static_cast<float>(x), y, static_cast<float>(z));
-            //glm::vec2 texCoords = glm::vec2(static_cast<float>(x) / (static_cast<float>(width) - 1.0f), static_cast<float>(z) / (static_cast<float>(height) - 1.0f));
             glm::vec2 texCoords = glm::vec2(
                 (static_cast<float>(x) / (static_cast<float>(width) - 1.0f)) * uvScale,
                 (static_cast<float>(z) / (static_cast<float>(height) - 1.0f)) * uvScale
